@@ -23,7 +23,7 @@ public class ElasticSearchConfig {
     public TransportClient getConnect() throws UnknownHostException {
         Settings settings = Settings.builder()
                 .put("cluster.name", clusterName).build();
-        client = new PreBuiltTransportClient(Settings.EMPTY)
+        client = new PreBuiltTransportClient(settings)
                 .addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(address), 9300));
         return client;
     }
