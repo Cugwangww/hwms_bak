@@ -18,17 +18,16 @@ public class Swagger {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiInfo())
 				.select()
-				//为controller包路径
-				.apis(RequestHandlerSelectors.basePackage("com.spring.iflytek.controller"))
+				.apis(RequestHandlerSelectors.basePackage("com.spring.iflytek"))
 				.paths(PathSelectors.any())
 				.build();
 	}
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("测试")
-				.contact("wangww")
+				.title("Swagger文档")
+				.contact("佚名")
 				.version("1.0")
-				.description("desc")
+				.description("项目描述文档")
 				.build();
 	}
 }
