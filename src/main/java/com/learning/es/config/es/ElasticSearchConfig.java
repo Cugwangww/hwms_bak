@@ -1,4 +1,4 @@
-package com.spring.iflytek.config.es;
+package com.learning.es.config.es;
 
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
