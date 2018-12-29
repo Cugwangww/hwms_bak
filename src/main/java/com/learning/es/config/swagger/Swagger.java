@@ -1,4 +1,4 @@
-package com.spring.iflytek.config.swagger;
+package com.learning.es.config.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

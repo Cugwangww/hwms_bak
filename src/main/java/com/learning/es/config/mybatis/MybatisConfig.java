@@ -1,4 +1,4 @@
-package com.spring.iflytek.config.mybatis;
+package com.learning.es.config.mybatis;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;

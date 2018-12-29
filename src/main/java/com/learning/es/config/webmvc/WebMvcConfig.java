@@ -1,4 +1,4 @@
-package com.spring.iflytek.config.webmvc;
+package com.learning.es.config.webmvc;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
