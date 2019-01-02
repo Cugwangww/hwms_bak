@@ -38,7 +38,7 @@ public class MybatisConfig {
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource());  
-        sqlSessionFactoryBean.setTypeAliasesPackage("com.iflytek.cooperative.model");
+        sqlSessionFactoryBean.setTypeAliasesPackage("com.learning.es.model");
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath*:mapper/**/*.xml"));
         sqlSessionFactoryBean.getObject().getConfiguration().setMapUnderscoreToCamelCase(true);  
