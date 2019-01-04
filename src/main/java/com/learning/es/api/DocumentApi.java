@@ -20,8 +20,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Random;
 
 /**
- * @Author wwwang7
- * @Date 2018/12/29 11:27
  */
 @RestController
 @RequestMapping("/doc")

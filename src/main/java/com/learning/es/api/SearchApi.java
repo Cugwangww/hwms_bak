@@ -21,8 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Author wwwang7
- * @Date 2019/1/2 14:45
  */
 @RestController
 @RequestMapping("/search")

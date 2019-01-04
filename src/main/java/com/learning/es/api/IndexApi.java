@@ -15,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Author wwwang7
- * @Date 2018/12/29 14:32
  */
 @RestController
 @RequestMapping("/index")
