@@ -71,6 +71,7 @@ public class SearchApi {
         highlightBuilder.postTags(HIGHLIGHTPOSTFIX);
         highlightBuilder.field("开发");
         query.should(QueryBuilders.matchQuery("book","开发"));
+        System.out.print("aaaa");
         searchQuery(query,highlightBuilder);
     }
 
