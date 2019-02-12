@@ -72,6 +72,7 @@ public class SearchApi {
         highlightBuilder.field("开发");
         query.should(QueryBuilders.matchQuery("book","开发"));
         System.out.print("aaaa");
+        System.out.print("bbbb");
         searchQuery(query,highlightBuilder);
     }
 
