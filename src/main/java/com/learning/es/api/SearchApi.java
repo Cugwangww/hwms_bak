@@ -74,6 +74,7 @@ public class SearchApi {
         System.out.print("aaaa");
         System.out.print("aaaa");
         System.out.print("bbbb");
+        System.out.print("bbbb");
         searchQuery(query,highlightBuilder);
     }
 
