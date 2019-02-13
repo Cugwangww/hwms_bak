@@ -23,8 +23,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
- */
 @RestController
 @RequestMapping("/search")
 @Api("查询_API")
@@ -71,10 +69,6 @@ public class SearchApi {
         highlightBuilder.postTags(HIGHLIGHTPOSTFIX);
         highlightBuilder.field("开发");
         query.should(QueryBuilders.matchQuery("book","开发"));
-        System.out.print("aaaa");
-        System.out.print("aaaa");
-        System.out.print("bbbb");
-        System.out.print("bbbb");
         searchQuery(query,highlightBuilder);
     }
 
