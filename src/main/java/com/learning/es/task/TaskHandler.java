@@ -11,7 +11,7 @@ import java.util.Date;
 public class TaskHandler {
 
     private static final Log log = LogFactory.getLog(TaskHandler.class);
-    @Scheduled(cron = "0/5 * * * * ?")
+    @Scheduled(cron = "0/30 * * * * ?")
     public void  Test(){
        log.info(new Date().toString());
     }
