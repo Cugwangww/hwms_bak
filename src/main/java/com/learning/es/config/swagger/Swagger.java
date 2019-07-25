@@ -18,7 +18,7 @@ public class Swagger {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiInfo())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.spring.iflytek"))
+				.apis(RequestHandlerSelectors.basePackage("com.learning.es"))
 				.paths(PathSelectors.any())
 				.build();
 	}
