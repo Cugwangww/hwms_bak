@@ -1,4 +1,4 @@
-package com.learning.es.config.swagger;
+package com.learning.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,7 +18,7 @@ public class Swagger {
 		return new Docket(DocumentationType.SWAGGER_2)
 				.apiInfo(apiInfo())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.learning.es"))
+				.apis(RequestHandlerSelectors.basePackage("com.learning.api"))
 				.paths(PathSelectors.any())
 				.build();
 	}

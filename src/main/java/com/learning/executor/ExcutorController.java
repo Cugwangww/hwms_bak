@@ -1,13 +1,10 @@
-package com.learning.es.executor;
+package com.learning.executor;
 
-import com.learning.es.config.executor.ExecutorConfig;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * @Author wwwang7

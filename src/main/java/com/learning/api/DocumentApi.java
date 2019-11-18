@@ -1,4 +1,4 @@
-package com.learning.es.api;
+package com.learning.api;
 
 import com.alibaba.fastjson.JSONObject;
 import io.swagger.annotations.Api;
@@ -11,9 +11,12 @@ import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.xcontent.XContentType;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsMessagingTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.jms.Queue;
 
 /**
  * @Author wwwang7
@@ -26,7 +29,14 @@ public class DocumentApi {
 
     @Autowired
     private TransportClient client;
+
     private static final Log log = LogFactory.getLog(DocumentApi.class);
+
+    @Autowired
+    private JmsMessagingTemplate jmsMessagingTemplate;
+
+    @Autowired
+    private Queue queue;
 
     @GetMapping("/inserDoc")
     @ApiOperation(value = "创建文档",notes = "创建文档")
@@ -53,5 +63,10 @@ public class DocumentApi {
             String result = response.getSourceAsString();
             log.info(String.format("获取文档结果:%s",result));
         }
+    }
+    @GetMapping("/testActiveMq")
+    @ApiOperation(value = "索引文档",notes = "索引文档")
+    public void testActiveMq(){
+        jmsMessagingTemplate.convertAndSend(queue, "测试消息队列" + System.currentTimeMillis());
     }
 }

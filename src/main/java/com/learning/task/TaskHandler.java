@@ -1,4 +1,4 @@
-package com.learning.es.task;
+package com.learning.task;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -11,7 +11,7 @@ import java.util.Date;
 public class TaskHandler {
 
     private static final Log log = LogFactory.getLog(TaskHandler.class);
-    @Scheduled(cron = "0/30 * * * * ?")
+    @Scheduled(cron = "0 0/1 * * * ?")
     public void  Test(){
        log.info(new Date().toString());
     }

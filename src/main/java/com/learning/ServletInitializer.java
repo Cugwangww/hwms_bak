@@ -1,4 +1,4 @@
-package com.learning.es;
+package com.learning;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

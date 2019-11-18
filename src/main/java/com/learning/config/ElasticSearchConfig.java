@@ -1,4 +1,4 @@
-package com.learning.es.config.es;
+package com.learning.config;
 
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;

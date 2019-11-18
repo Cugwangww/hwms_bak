@@ -1,4 +1,4 @@
-package com.learning.juc.aqs;
+package com.learning.juc;
 
 import java.util.concurrent.*;
 
