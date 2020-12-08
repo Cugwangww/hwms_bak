@@ -36,6 +36,7 @@ public class BaseProducer{
         System.out.println("222");
         System.out.println("555");
         System.out.println("777");
+        System.out.println("888");
         jmsMessagingTemplate.convertAndSend(new ActiveMQQueue(destination), "测试"+new Date().toString());
     }
 }
