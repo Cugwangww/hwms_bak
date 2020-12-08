@@ -1,4 +1,4 @@
-package com.learning.es.api;
+package com.learning.api;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
