@@ -33,6 +33,7 @@ public class BaseProducer{
 
     public void sendMsg(String destination, String message) {
         System.out.println("111");
+        System.out.println("222");
         jmsMessagingTemplate.convertAndSend(new ActiveMQQueue(destination), "测试"+new Date().toString());
     }
 }
