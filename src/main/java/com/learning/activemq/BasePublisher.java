@@ -1,7 +1,5 @@
 package com.learning.activemq;
 
-import com.learning.task.TaskHandler;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.activemq.command.ActiveMQTopic;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
