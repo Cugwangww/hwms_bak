@@ -1,7 +1,6 @@
 package com.learning.model.singleton;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
  * @description 单例模式双重校验锁 double-checked locking
  * instance = new Singleton()这句，这并非是一个原子操作，事实上在 JVM 中这句话大概做了下面 3 件事情。
  * 1.给 instance 分配内存
