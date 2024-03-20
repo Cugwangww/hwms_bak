@@ -1,6 +1,9 @@
-package 二叉搜索树.二叉搜索树的最小绝对差;
+package com.二叉搜索树.二叉搜索树的最小绝对差;
 
 import java.util.*;
+
+import com.二叉搜索树.二叉搜索树的最小绝对差.TreeNode;
+
 
 /**
  * @author wangweiwei22@hikvision.com.cn
