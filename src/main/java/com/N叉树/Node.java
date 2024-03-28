@@ -1,4 +1,4 @@
-package com.N叉树.N叉树的后序遍历;
+package com.N叉树;
 
 import java.util.List;
 

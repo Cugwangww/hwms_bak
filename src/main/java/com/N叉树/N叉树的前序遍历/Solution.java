@@ -1,4 +1,4 @@
-package com.N叉树.N叉树的后序遍历;
+package com.N叉树.N叉树的前序遍历;
 
 import com.N叉树.Node;
 
@@ -22,7 +22,7 @@ public class Solution {
      * 输出：[5,6,3,2,4,1]
      *
      */
-    public List<Integer> postorder(Node root) {
+    public List<Integer> preorder(Node root) {
         List<Integer> list = new ArrayList<>();
         help(root,list);
         return list;
@@ -32,9 +32,9 @@ public class Solution {
         if(root ==null){
             return;
         }
+        list.add(root.val);
         for (Node node : root.children) {
             help(node,list);
         }
-        list.add(root.val);
     }
 }

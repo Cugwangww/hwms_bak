@@ -2,7 +2,7 @@ package com.二叉搜索树.二叉搜索树的最小绝对差;
 
 import java.util.*;
 
-import com.二叉搜索树.二叉搜索树的最小绝对差.TreeNode;
+import com.二叉搜索树.TreeNode;
 
 
 /**
