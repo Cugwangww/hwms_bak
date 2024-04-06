@@ -5,7 +5,7 @@ import 链表.ListNode;
 import java.util.*;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/12
  */

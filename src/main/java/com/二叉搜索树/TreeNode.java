@@ -1,7 +1,7 @@
 package com.二叉搜索树;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/20
  */

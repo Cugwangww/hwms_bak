@@ -1,7 +1,7 @@
 package com.learning.model.strategy;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2021/9/17
  */

@@ -3,7 +3,7 @@ package 动态规划.三角形最小路径和;
 import java.util.List;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/12
  */

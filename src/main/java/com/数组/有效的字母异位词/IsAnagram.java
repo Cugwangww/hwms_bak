@@ -3,7 +3,7 @@ package 数组.有效的字母异位词;
 import java.util.Arrays;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/14
  */

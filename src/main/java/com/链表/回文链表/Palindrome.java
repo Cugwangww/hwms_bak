@@ -6,7 +6,7 @@ import 链表.ListNode;
 
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @date 2024/3/13
  */
 public class Palindrome {

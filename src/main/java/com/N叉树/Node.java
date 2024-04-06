@@ -3,7 +3,7 @@ package com.N叉树;
 import java.util.List;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/21
  */

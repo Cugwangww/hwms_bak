@@ -1,7 +1,7 @@
 package 链表;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/3/20
  */
