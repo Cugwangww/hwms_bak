@@ -1,7 +1,7 @@
 package com.贪心算法.卖卖股票;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ * @author author
  * @description
  * @date 2024/4/10
  */
