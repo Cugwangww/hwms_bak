@@ -1,4 +1,4 @@
-package 链表.链表是否有环;
+package com.链表.链表是否有环;
 
 import 链表.ListNode;
 
@@ -35,5 +35,17 @@ public class HaveCircle {
             quick = quick.next.next;
         }
         return true;
+    }
+
+    public ListNode res(ListNode head) {
+        ListNode pre = null;
+        ListNode curr = head;
+        while (curr!=null){
+            ListNode next = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = next;
+        }
+        return pre;
     }
 }

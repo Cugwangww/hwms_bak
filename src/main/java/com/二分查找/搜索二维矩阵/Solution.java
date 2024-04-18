@@ -19,7 +19,27 @@ public class Solution {
      * @param target
      * @return
      */
-    public boolean searchMatrix(int[][] matrix, int target) {
-        return true;
+    public static  boolean searchMatrix(int[][] matrix, int target) {
+        int col = matrix.length;
+        int row = matrix[0].length;
+        int left = 0;
+        int right = col * row -1;
+        while (left<=right){
+            int mid = left + (right -left)/2;
+            int num = matrix[mid/row][mid%row];
+            if(num>target){
+                right = mid-1;
+            }else if(num<target){
+                left = mid +1;
+            }else {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static void main(String[] args) {
+        int[][] num = {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
+        System.out.println(searchMatrix(num,15));
     }
 }
