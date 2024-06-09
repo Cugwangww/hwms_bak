@@ -1,4 +1,4 @@
-package com.递归.翻转二叉树;
+package com.二叉树.反转二叉树;
 
 import com.二叉搜索树.TreeNode;
 
