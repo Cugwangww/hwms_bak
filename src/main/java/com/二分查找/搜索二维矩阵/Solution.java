@@ -40,6 +40,22 @@ public class Solution {
 
     public static void main(String[] args) {
         int[][] num = {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
-        System.out.println(searchMatrix(num,15));
+        System.out.println(searchMatrix1(num,3));
+    }
+
+    public static boolean searchMatrix1(int[][] matrix, int target) {
+        int left = 0,right= matrix.length*matrix[0].length-1;
+        while (left<=right){
+            int mid = left + (right-left)/2;
+            int row = matrix[0].length;
+            if(matrix[mid/row][mid%row]==target){
+                return true;
+            }else if(matrix[mid/row][mid%row]<target){
+                left = mid+1;
+            }else {
+                right = mid-1;
+            }
+        }
+        return false;
     }
 }

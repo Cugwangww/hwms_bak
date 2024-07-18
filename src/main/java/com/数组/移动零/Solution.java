@@ -45,4 +45,38 @@ public class Solution {
         }
     }
 
+    /**
+     * 暴力解法 超时
+     * @param height
+     * @return
+     */
+    public int maxArea(int[] height) {
+        int sum = 0;
+        for (int i = 0; i < height.length; i++) {
+            for (int j = i+1; j < height.length; j++) {
+                sum = Math.max(sum,Math.min(height[i],height[j])*(j-i));
+            }
+        }
+        return sum;
+    }
+
+    /**
+     * 双指针法
+     * @param height
+     * @return
+     */
+    public int maxArea1(int[] height) {
+        int sum = 0;
+        int left = 0,right = height.length-1;
+        while (left<=right){
+            sum = Math.max(sum,(right-left)*Math.min(height[right],height[left]));
+            if(height[left]<=height[right]){
+                left++;
+            }else{
+                right--;
+            }
+        }
+        return sum;
+    }
+
 }

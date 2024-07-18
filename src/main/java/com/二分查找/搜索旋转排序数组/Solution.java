@@ -20,21 +20,19 @@ public class Solution {
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length-1;
-        int mid = (right-left)/2+left;
-        while (left<right){
+        while (left<=right){
+            int mid = (right-left)/2+left;
             if(nums[mid] == target){
                 return mid;
-            }
-            //左边有序，右边无序
-            if(nums[mid] > nums[right]){
-                if(nums[mid]>target && target>nums[left]){
+            }else if(nums[mid] > nums[right]){
+                //左边有序，右边无序
+                if(nums[mid]>target && target>=nums[left]){
                     right = mid -1;
                 }else {
                     left = mid +1;
                 }
-            }
-            //右边有序，左边无序
-            if(nums[mid] < nums[left]){
+            }else {
+                //右边有序，左边无序
                 if(nums[right]>=target && target>nums[mid]){
                     left = mid +1;
                 }else {
@@ -43,5 +41,30 @@ public class Solution {
             }
         }
         return -1;
+    }
+
+    public static int minPathSum(int[][] grid) {
+        int row = grid.length;
+        int col = grid[0].length;
+        int[][] dp = new int[row][col];
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                if(j==0 && i==0){
+                    dp[i][j] = grid[i][j];
+                }else if(i==0){
+                    dp[i][j] = dp[i][j-1] + grid[i][j];
+                }else if(j==0){
+                    dp[i][j] = dp[i-1][j] + grid[i][j];
+                }else {
+                    dp[i][j] = Math.min(dp[i-1][j],dp[i][j-1]) + grid[i][j];
+                }
+            }
+        }
+        return dp[row-1][col-1];
+    }
+
+    public static void main(String[] args) {
+        int[][]test = new int[][]{{1,3,1},{1,5,1},{4,2,1}};
+        System.out.println(minPathSum(test));
     }
 }

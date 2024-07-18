@@ -22,6 +22,11 @@ public class Solution {
     public static int[] maxSlidingWindow(int[] nums, int k) {
         int n = nums.length;
         Deque<Integer> deque = new LinkedList<Integer>();
+        //peekLast(): 获取队尾元素但不移除，如果队列无元素，则返回null
+        //peekFirst(): 获取队头元素但不移除，如果队列无元素，则返回null
+        //pollLast(): 返回并移除队尾元素，如果队列无元素，则返回null
+        //pollFirst(): 返回并移除队头元素，如果队列无元素，则返回null
+        //offerLast(): 向队尾插入元素，如果插入成功返回true，否则返回false
         for (int i = 0; i < k; ++i) {
             while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
                 deque.pollLast();
@@ -45,6 +50,6 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(maxSlidingWindow(new int[]{3,2,1},2));
+        System.out.println(maxSlidingWindow(new int[]{1,-1},1));
     }
 }
