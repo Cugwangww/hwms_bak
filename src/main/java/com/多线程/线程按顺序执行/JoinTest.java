@@ -27,11 +27,7 @@ public class JoinTest {
                 }
                 System.out.println("t2");
             }
-
         });
-
-
-
 
         Thread t3 = new Thread(new Runnable() {
 
