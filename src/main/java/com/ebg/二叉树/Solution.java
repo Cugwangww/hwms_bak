@@ -2,8 +2,7 @@ package com.ebg.二叉树;
 
 import com.ebg.二叉搜索树.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author wangweiwei22@hikvision.com.cn
@@ -120,8 +119,30 @@ public class Solution {
         }
     }
 
+    public static boolean isValid(String s) {
+        HashMap<Character,Character> map = new HashMap<>();
+        map.put('}','{');
+        map.put(')','(');
+        map.put(']','[');
+        char[] chars = s.toCharArray();
+        Deque<Character> stack= new ArrayDeque<>();
+        for (int i = 0; i < chars.length; i++) {
+            char cha = chars[i];
+            if(map.containsKey(cha)){
+                if(stack.isEmpty() || !stack.peek().equals(map.get(cha))){
+                    return false;
+                }else {
+                    stack.pop();
+                }
+            }else{
+                stack.push(cha);
+            }
+        }
+        return stack.isEmpty();
+    }
+
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLIS(new int[]{0,1,0,3,2,3}));
+        System.out.println(isValid("[{]"));
     }
 }

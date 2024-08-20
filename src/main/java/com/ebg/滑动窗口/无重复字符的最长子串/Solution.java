@@ -29,7 +29,21 @@ public class Solution {
         return res;
     }
 
-    public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abcad"));
+    public static int lengthOfLongestSubstring1(String s) {
+        char[] chars = s.toCharArray();
+        boolean[] has = new boolean[128];
+        int left = 0;
+        int length = chars.length;
+        int res = 0;
+        for (int i = 0; i < length; i++) {
+            int index = chars[i];
+            while (has[index]){
+                has[chars[left++]]=false;
+            }
+            has[index]=true;
+            res = Math.max(res, i - left + 1);
+        }
+        return res;
     }
+
 }

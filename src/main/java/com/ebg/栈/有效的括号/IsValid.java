@@ -1,6 +1,4 @@
-package com.ebg.有效的括号;
-
-import com.sun.javafx.collections.MappingChange;
+package com.ebg.栈.有效的括号;
 
 import java.util.Deque;
 import java.util.HashMap;
