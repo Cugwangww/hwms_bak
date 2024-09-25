@@ -1,7 +1,7 @@
 package com.ebg.字符串.最长公共前缀;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/6/9
  */

@@ -1,7 +1,7 @@
 package com.ebg.多线程.线程按顺序执行;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/5/22
  */

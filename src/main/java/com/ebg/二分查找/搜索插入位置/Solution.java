@@ -1,7 +1,7 @@
 package com.ebg.二分查找.搜索插入位置;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/7/11
  */

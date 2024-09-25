@@ -11,7 +11,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/5/15
  */

@@ -1,7 +1,7 @@
 package com.ebg.数组.除自身以外数组的乘积;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/7/18
  */

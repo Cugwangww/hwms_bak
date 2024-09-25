@@ -1,7 +1,7 @@
 package com.ebg.矩阵.搜索二维矩阵严格递增;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/8/14
  */

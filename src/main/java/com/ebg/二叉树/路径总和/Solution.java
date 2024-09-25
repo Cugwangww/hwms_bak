@@ -3,7 +3,7 @@ package com.ebg.二叉树.路径总和;
 import com.ebg.二叉搜索树.TreeNode;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/8/4
  */

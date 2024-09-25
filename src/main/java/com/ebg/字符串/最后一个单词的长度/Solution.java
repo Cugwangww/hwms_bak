@@ -1,7 +1,7 @@
 package com.ebg.字符串.最后一个单词的长度;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/6/9
  */

@@ -1,7 +1,7 @@
 package com.ebg.滑动窗口.买卖股票的最佳时机2;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/8/19
  */

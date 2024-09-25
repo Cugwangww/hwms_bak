@@ -3,7 +3,7 @@ package com.ebg.链表.相交链表;
 import com.ebg.链表.ListNode;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/7/9
  */

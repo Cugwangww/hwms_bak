@@ -1,7 +1,7 @@
 package com.ebg.二分查找.在排序数组中查找元素的第一个和最后一个位置;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/7/17
  */

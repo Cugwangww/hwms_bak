@@ -1,7 +1,7 @@
 package com.ebg.滑动窗口.乘积小于K的子数组;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/8/14
  */

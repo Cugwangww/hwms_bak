@@ -1,7 +1,7 @@
 package com.ebg.矩阵.旋转图像;
 
 /**
- * @author wangweiwei22@hikvision.com.cn
+ *
  * @description
  * @date 2024/8/14
  */
