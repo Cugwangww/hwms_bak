@@ -1,4 +1,4 @@
-package com.ebg.滑动窗口.买卖股票的最佳时机;
+package com.ebg.滑动窗口.买卖股票的最佳时机3;
 
 /**
  * @author wangweiwei22@hikvision.com.cn
@@ -7,12 +7,12 @@ package com.ebg.滑动窗口.买卖股票的最佳时机;
  */
 public class Solution {
 
-    /** 只能买卖一次
-     *https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/solutions/2464650/mei-ju-mai-chu-jie-ge-wei-hu-mai-ru-de-z-02ud/
+    /** 至多买卖两次
+     *https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-iii/solutions/552695/mai-mai-gu-piao-de-zui-jia-shi-ji-iii-by-wrnt/
      * @param prices
      * @return
      */
-    public int maxProfit(int[] prices) {
+    public static int maxProfit(int[] prices) {
         int minPrice = prices[0];
         int ans = 0;
         for (int i = 1; i < prices.length; i++) {
@@ -20,5 +20,9 @@ public class Solution {
             minPrice = Math.min(minPrice, prices[i]);
         }
         return ans;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(maxProfit(new int[]{7,1,5,3,6,4}));
     }
 }

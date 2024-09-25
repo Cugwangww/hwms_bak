@@ -7,7 +7,7 @@ package com.ebg.滑动窗口.买卖股票的最佳时机2;
  */
 public class Solution {
 
-    /**
+    /** 可以买卖多次
      *https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/solutions/476791/mai-mai-gu-piao-de-zui-jia-shi-ji-ii-by-leetcode-s/
      * @param prices
      * @return
