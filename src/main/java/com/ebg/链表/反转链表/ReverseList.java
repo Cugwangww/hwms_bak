@@ -1,4 +1,4 @@
-package com.ebg.链表.链表反转;
+package com.ebg.链表.反转链表;
 
 import com.ebg.链表.ListNode;
 
